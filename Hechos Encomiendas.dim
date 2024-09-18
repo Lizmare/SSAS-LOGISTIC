@@ -1,0 +1,202 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4dddc198-71f9-4d04-8350-3ca7f58f5d09" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Hechos Encomiendas</ID>
+  <Name>Hechos Encomiendas</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5dcb4944-b464-445e-b772-ab737a877256">
+    <DataSourceViewID>Logistica DSRP BI</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="38824e93-2ece-4fb0-8227-9d36cb22edeb">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="3cd9fb2b-e549-43ff-babc-077e39778048">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c610bd51-c506-49fe-90ff-0ff08c8fdffd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d34dd5b-1ba6-49d4-9707-d4cb26e828e7">
+            <TableID>dbo_hechos_encomiendas</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="69e4b951-1556-4962-ac09-8fbe66eccf74">
+          <AttributeID>Destino Sucursal Id</AttributeID>
+          <Name>Destino Sucursal Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="168f20b0-ccd5-468c-93ea-476faf0c0df6">
+          <AttributeID>Vehiculo Id</AttributeID>
+          <Name>Vehiculo Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dc940c00-e27f-4583-823c-d143376dda0c">
+          <AttributeID>Origen Sucursal Id</AttributeID>
+          <Name>Origen Sucursal Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="00043758-4f86-4c2c-8a99-6454d691c577">
+          <AttributeID>Ruta Id</AttributeID>
+          <Name>Ruta Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2ce15c6d-7926-45fc-8f38-c78c76cefc4b">
+          <AttributeID>Cliente Id</AttributeID>
+          <Name>Cliente Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8a39d379-6764-473f-a915-8ad6fec29e02">
+          <AttributeID>Tiempo Id</AttributeID>
+          <Name>Tiempo Id</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="78b233eb-7bce-40e9-b1a7-f2dc234f42f2">
+      <ID>Destino Sucursal Id</ID>
+      <Name>Destino Sucursal Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4542b26a-2e27-4c7e-aceb-af364de04fc2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cfa2a63c-8913-44bd-a503-c741ccba79b9">
+            <TableID>dbo_hechos_encomiendas</TableID>
+            <ColumnID>destino_sucursal_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dfa1c230-bef6-4a2f-afd9-cddf58e865b3">
+      <ID>Vehiculo Id</ID>
+      <Name>Vehiculo Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="119972c3-8f37-4ace-bfb4-ded9b9c49b66">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e74a746-846a-4020-87ed-b3b19db21a7d">
+            <TableID>dbo_hechos_encomiendas</TableID>
+            <ColumnID>vehiculo_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="860ad04f-acb9-49a4-ba11-e0ad8743fdd1">
+      <ID>Origen Sucursal Id</ID>
+      <Name>Origen Sucursal Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="82f6430d-acb9-4e1a-9866-5f79c20e0a5c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a195a578-3c6f-4e90-9944-add636790a83">
+            <TableID>dbo_hechos_encomiendas</TableID>
+            <ColumnID>origen_sucursal_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8fe5896b-f9b1-4344-b50e-556e732bd28f">
+      <ID>Ruta Id</ID>
+      <Name>Ruta Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3e7e05a8-06bd-43e4-9255-fae4f11071a6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="600d456f-fb29-42d2-84eb-81e82c1bec37">
+            <TableID>dbo_hechos_encomiendas</TableID>
+            <ColumnID>ruta_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="49fc692f-b048-4881-9c8f-4c1572eb5c20">
+      <ID>Cliente Id</ID>
+      <Name>Cliente Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4cfb5158-0657-45d1-a709-4851057b07d9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1efcfc7-1bf8-4388-8645-3241049fdabb">
+            <TableID>dbo_hechos_encomiendas</TableID>
+            <ColumnID>cliente_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="110609de-391a-434d-898f-c6f8b6ed8d4b">
+      <ID>Tiempo Id</ID>
+      <Name>Tiempo Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="67341df3-f0e6-4404-b830-c3a3b45c3a19">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a68841c2-95f5-49d8-b45a-24957ed2de0e">
+            <TableID>dbo_hechos_encomiendas</TableID>
+            <ColumnID>tiempo_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
